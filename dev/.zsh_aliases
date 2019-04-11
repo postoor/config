@@ -1,0 +1,8 @@
+alias renginx='sudo nginx -t && sudo service nginx reload'
+alias condb='mysql --defaults-file=~/.my.cnf'
+alias findme='sh /home/tony_lee/lazyScript/findThisVariable.sh '
+alias vi='vim'
+alias webroot='cd /srv/www/tony_lee/'
+alias which='alias | /usr/bin/which --tty-only --read-alias --show-dot --show-tilde'
+alias yii='php yii'
+alias git-old='/usr/bin/git'
