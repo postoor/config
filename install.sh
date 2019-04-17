@@ -5,8 +5,13 @@ BASEDIR=$(dirname $0)
 echo "Install at Product? (Y/n)"
 read yn
 case $yn in
-    [Yy]* ) INSTALL_ENV='prod';;
+    [Yy]* ) 
+        INSTALL_ENV='prod'
+        ;;
     * )
+        echo "Install ZSH? (Y/n)"
+        read INSTALL_ZSH
+        ;;
 esac
 
 sudo apt update
@@ -16,10 +21,8 @@ sudo timedatectl set-timezone Asia/Taipei
 sudo apt install ntpdate -y
 sudo ntpdate time.stdtime.gov.tw
 
-if [ $INSTALL_ENV -eq 'dev' ]; then
+if [ $INSTALL_ENV = 'dev' ]; then
     INSTALL_ZSH='Y'
-    echo "Install ZSH? (Y/n)"
-    read INSTALL_ZSH
     case $INSTALL_ZSH in
         [Nn]* ) 
             ;;
