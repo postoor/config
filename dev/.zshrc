@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.script:$HOME/tool:$HOME/.composer/vendor/bin:$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/tony_lee/.oh-my-zsh"
@@ -96,5 +96,4 @@ source $ZSH/oh-my-zsh.sh
 if [ -f ~/.zsh_aliases ]; then
     . ~/.zsh_aliases
 fi
-export PATH="/home/tony_lee/tool:/home/tony_lee/tool/git:$PATH:$HOME/.composer/vendor/bin"
 base64 -d <<< "ICAsLS4gICAgICAgXywtLS0uXyBfXyAgLyBcIAogLyAgKSAgICAuLScgICAgICAgYC4vIC8gICBcIAooICAoICAgLCcgICAgICAgICAgICBgLyAgICAvfCAKIFwgIGAtIiAgICAgICAgICAgICBcJ1wgICAvIHwgCiAgYC4gICAgICAgICAgICAgICwgIFwgXCAvICB8IAogICAvYC4gICAgICAgICAgLCctYC0tLS1ZICAgfCAKICAoICAgICAgICAgICAgOyAgICAgICAgfCAgICcgCiAgfCAgLC0uICAgICwtJyAgICAgICAgIHwgIC8gCiAgfCAgfCAoICAgfCAgICAgICAgQnVnIHwgLyAKICApICB8ICBcICBgLl9fX19fX19fX19ffC8gCiAgYC0tJyAgIGAtCgo="
