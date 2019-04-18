@@ -41,6 +41,6 @@ fi
 cp $BASEDIR/$INSTALL_ENV/.bash* ~/
 
 # Copy vim config
-cp vim/.vimrc ~/.vimrc
+cp $BASEDIR/vim/.vimrc ~/.vimrc
 
 exit 0
